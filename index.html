@@ -47,40 +47,37 @@
 	<header>
 	    <img src="images/largebucks-logo.jpg" alt="You drink our coffee, we make large bucks!" class="flexible" id="logo" />
 		<h1 class="masthead">LARGEBUCK$ COFFEE</h1>
+		<p>Click below to view coffee specials for different days:</p>
 		<nav>
 			<ul>
-				<li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
-                <li><a href="#">Sample Link</a></li>
+				<li><a href="index.html?day=0">Sunday</a></li>
+                <li><a href="index.html?day=1">Monday</a></li>
+                <li><a href="index.html?day=2">Tuesday</a></li>
+                <li><a href="index.html?day=3">Wednesday</a></li>
+                <li><a href="index.html?day=4">Thursday</a></li>
+				<li><a href="index.html?day=5">Friday</a></li>
+				<li><a href="index.html?day=6">Saturday</a></li>
 			</ul>
 		</nav>
 	</header>
     <main>
 		 <header><h3 class="slogan">You drink our coffee, we make large bucks!</h3></header>
-        <p>
-    		 <img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
-            <strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p>
-        <p><span class="feature">Pumpkin Spice is </span> Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical.</p>
-        <p><span class="feature">Enjoy Pumpkin Spice with our </span> Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin.</p>
-		 <p>
-		 <b>At LargeBuck$ we aspire to: </b>Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
+        
+		 <div id="coffee-cup">Coffee data goes here</div>
 
-		 </p>
-		<p>
-		Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
+		 <!-- <p>
+    		 <img src="images/pumpkin-spice-latte.jpg" alt="Our Pumpkin Spice Latte tastes great on a Fall Day!" id="coffee" />
+            <strong class="feature">Monday's Coffee Special:</strong> Monday's daily coffee special is <strong class="feature">Pumpkin Spice Latte</strong>, which makes us wish it was always Fall, as this is one of our top sellers!</p> -->
+
+        <p> The Goal of this project is to show a different drink Special for each day of the week. This is accomplished by defining the number of the week which is from 0-6. Depending on the day of the week the daily special for the store will be different. 
 		</p>
-		<p>
-		Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel put a bird on it master cleanse.
+        <p>Since there are seven days there will be seven different drink specials. This will also mean that not only will the drink change, but the page will change 7 different times. Depending on the day the page will change the image of the drink the background of the page and the description of the drink. 
 		</p>
-		<p>
-		Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-		</p>
+		
      </main>
 	 <footer>
 		<p><small>&copy; 2022 by 
-			YOUR NAME HERE, All Rights Reserved ~ 
+			Peter Ho, All Rights Reserved ~ 
 			<a id="html-checker" href="#">Check HTML</a> ~ 
 			<a id="css-checker" href="#">Check CSS</a></small>
 	   </p>
@@ -92,5 +89,6 @@
 		
 		document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
     </script>	
+	<script src="js/daily-grind.js"></script>
 </body>
 </html>
